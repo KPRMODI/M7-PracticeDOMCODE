@@ -18,8 +18,8 @@ for (let i = 0; i < 9; i++) { // this for loop simplifies the process appending 
     table.children[i%3].appendChild(td); // appends td to table children
 }
 
-test.style.backgroundColor = "rgb(125, 125, 125)" // styles the table making the background grey
-test.style.border = "2px solid rgb(0,0,255)" // style the table by making a border around it with a blue color
+table.style.backgroundColor = "rgb(125, 125, 125)" // styles the table making the background grey
+table.style.border = "2px solid rgb(0,0,255)" // style the table by making a border around it with a blue color
 
-test.setAttribute("style", (test.getAttribute("style") || "") + "border-radius: 15px;")  // style by setAttribute, make the border look circular
-test.setAttribute("style", (test.getAttribute("style") || "") + "width: 200px;")  // style by setAttribute, makes the width of the table smaller
+table.setAttribute("style", (table.getAttribute("style") || "") + "border-radius: 15px;")  // style by setAttribute, make the border look circular
+table.setAttribute("style", (table.getAttribute("style") || "") + "width: 200px;")  // style by setAttribute, makes the width of the table smaller
