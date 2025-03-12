@@ -13,9 +13,9 @@ table.appendChild(tr3)
 
 const useText = ["Car", "Chevrolet", "Pontiac", "Top", "120mph", "140mph", "Price", "$10,000","$20,000"];
 for (let i = 0; i < 9; i++) { // this for loop simplifies the process appending text to the tr's 
-    let td = document.createElement("td");
-    td.textContent = useText[i];
-    table.children[i%3].appendChild(td);
+    let td = document.createElement("td"); // creates the td
+    td.textContent = useText[i]; // appends to td
+    table.children[i%3].appendChild(td); // appends td to table children
 }
 
 test.style.backgroundColor = "rgb(125, 125, 125)" // styles the table making the background grey
